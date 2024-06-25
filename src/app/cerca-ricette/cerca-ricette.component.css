@@ -1,0 +1,35 @@
+.form {
+    padding-top: 30px;
+    width: auto;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.full-width {
+    width: 500px;
+    align-content: center;
+    background-color: aliceblue;
+}
+
+.example-container {
+    width: auto;
+    height: 100%;
+    margin: 10px;
+    border: 1px solid #555;
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+}
+
+.mat-drawer.mat-drawer-side {
+    scrollbar-width: none;
+    width: 200px;
+}
+
+.mat-drawer-inner-container {
+    overflow: hidden;
+}
+
+.clickable {
+    cursor: pointer;
+}

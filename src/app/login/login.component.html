@@ -1,0 +1,14 @@
+<app-basic-header></app-basic-header>
+<div class="form">
+    <div class="login">Login</div>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput required type="email" name="email" [(ngModel)]="userRegisterLogin.email" placeholder="Email">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput required type="password" name="password" [(ngModel)]="userRegisterLogin.password" placeholder="Password">
+    </mat-form-field>
+    <br/>
+    <button (click)="login()" color="primary" mat-raised-button>Login</button>
+</div>

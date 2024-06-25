@@ -1,0 +1,4 @@
+<app-header></app-header>
+<mat-card>Lista degli Ingredienti</mat-card><br>
+<li matInput *ngFor="let item of listaSpesa.ingredienti"> {{item.ingrediente}}</li><input matInput [hidden]="true" placeholder="ingredienti">
+<button (click)="ordina()"> Ordina</button>

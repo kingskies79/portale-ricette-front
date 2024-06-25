@@ -1,0 +1,37 @@
+<div style="text-align: center; padding-top: 30px;">
+    <b>Ricetta nome:</b><label> {{ricetta.nome}}</label>
+    <table style="width: 100%">
+        <th> </th>
+        <td>
+            <mat-form-field>
+                <mat-label>Nome ricetta:</mat-label>
+                <input matInput type="ricetta.nome" [(ngModel)]="ricetta.nome" (click)="onSubmit()" [readonly]="readOnly">
+            </mat-form-field>
+        </td>
+        <th> </th>
+        <td>
+            <mat-form-field>
+                <mat-label>Descrizione:</mat-label>
+                <textarea [readonly]="readOnly" cdkTextareaAutosize #autosize="cdkTextareaAutosize" cdkAutosizeMinRows="1" cdkAutosizeMaxRows="10" matInput type="ricetta.descrizione" [(ngModel)]="ricetta.descrizione"></textarea>
+            </mat-form-field>
+        </td>
+        <th> </th>
+        <td>
+            <mat-form-field>
+                <mat-label>Tempo:</mat-label>
+                <input matInput type="ricetta.durata" [(ngModel)]="ricetta.durata" [readonly]="readOnly">
+            </mat-form-field>
+        </td>
+        <th> </th>
+        <td>
+            <mat-form-field>
+                <mat-label>Ingredienti:</mat-label>
+
+                <input value="ingrediente" matInput type="ingrediente" [(ngModel)]="ingredienti" [readonly]="readOnly">
+            </mat-form-field>
+        </td>
+        <button type="submit" [hidden]="readOnly" (click)="onSubmit()">Modifica</button>
+        <button mat-button color="primary" type=" submit " [hidden]="!readOnly " (click)="addListaSpesa(ingredienti) ">Aggiungi alla lista della Spesa</button>
+
+    </table>
+</div>

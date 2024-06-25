@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="form">
+    <div class="signup">Sign Up</div>
+    <mat-form-field>
+        <mat-label>Fist Name</mat-label>
+        <input matInput type="text" name="LirstName" [(ngModel)]="user.firstName" placeholder="First Name" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput type="text" name="LastName" [(ngModel)]="user.lastName" placeholder="Last Name" required>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput required type="email" name="Email" [(ngModel)]="user.email" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput required type="password" name="password" [(ngModel)]="user.password" placeholder="Password">
+
+    </mat-form-field>
+    <br/>
+    <button (click)="register()" color="primary" mat-raised-button>Sign up</button>
+</div>

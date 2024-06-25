@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>{{dialogTitle}}</h1>
+<div mat-dialog-content>
+    <p>{{dialogText}}</p>
+
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="saveMessage()">Conferma</button>
+    <button mat-button (click)="closeDialog()" cdkFocusInitial>No Grazie</button>
+</div>
